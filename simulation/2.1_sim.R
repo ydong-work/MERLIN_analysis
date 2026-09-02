@@ -50,8 +50,6 @@ Fit3 <- fread(paste0("/plink_summarystats/out_gwis_output_plink2.PHENO1.glm.line
 fit3 <- fit3[fit3$TEST == "ADDxCOVAR1", ]
 Fit3 <- Fit3[Fit3$TEST == "ADDxCOVAR1", ]
 
-p_cutoff <- 1e-4
-
 ## choose iv 
 fit1_pcut <- fit1[fit1$P < 0.01, ]
 fit3_pcut <- fit3[fit3$P < 0.01, ]
